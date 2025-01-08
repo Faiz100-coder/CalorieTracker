@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "django": "^1.0.0",
+    "node": "^20.18.0",
+    "python": "^0.0.4",
+    "source": "^0.0.3"
+  }
+}

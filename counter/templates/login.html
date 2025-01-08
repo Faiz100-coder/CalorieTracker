@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    
+    <style>
+        /* Inline CSS for quick styling */
+      /* General Styles */
+body 
+    form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9; /* Optional for styling */
+    border: 1px solid #ddd; /* Optional for styling */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    
+    font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+
+    
+
+}
+
+/* Style input fields */
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+    
+}
+
+/* Style the button */
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Style the signup link */
+form p {
+    text-align: center;
+    /* color: #2f333a; */
+}
+
+form a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+    margin-top: 120px;
+    color: #2d333e;
+}
+
+    </style>
+</head>
+<body>
+    <h1 >Login</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" >Login</button>
+        <p>Don't have an account? <a href="{% url 'signup' %}">Sign up here</a></p>
+    </form>
+</body>
+</html>
