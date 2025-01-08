@@ -40,7 +40,7 @@ Follow these steps to set up the project on your local machine:
 
 ### 1. Clone the Repository
 ```bash
-https://github.com/your-username/food-calorie-counter.git
+https://github.com/Faiz100-coder/CalorieTracker.git
 cd food-calorie-counter
 ```
 
